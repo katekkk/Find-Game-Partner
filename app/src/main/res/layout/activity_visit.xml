@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/activity_visit_img_portrait"
+        android:layout_width="@dimen/dp_fragment_profile_portrait_size"
+        android:layout_height="@dimen/dp_fragment_profile_portrait_size"
+        android:layout_marginStart="@dimen/dp_general_huge"
+        android:layout_marginTop="@dimen/dp_general_large"
+        android:src="@drawable/portrait_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_oval="true"/>
+
+    <TextView
+        android:id="@+id/activity_visit_text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_general_normal"
+        android:paddingStart="@dimen/dp_general_large"
+        android:paddingTop="@dimen/dp_general_normal"
+        android:paddingEnd="@dimen/dp_general_large"
+        android:paddingBottom="@dimen/dp_general_normal"
+        android:text="John"
+        android:textSize="@dimen/sp_general_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_visit_img_portrait"
+        app:layout_constraintStart_toEndOf="@+id/activity_visit_img_portrait"
+        app:layout_constraintTop_toTopOf="@+id/activity_visit_img_portrait"/>
+
+    <LinearLayout
+        android:id="@+id/activity_visit_label_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_general_large"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_general_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_visit_img_portrait">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_profile_introduction"
+            android:textSize="@dimen/sp_general_normal"/>
+
+        <TextView
+            android:id="@+id/activity_visit_text_view_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_general_large"
+            android:padding="@dimen/dp_general_small"
+            android:text="A happy game player :)"
+            android:textSize="@dimen/sp_general_small"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_general_large"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_general_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_visit_label_container">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_notification_comments"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/sp_general_normal"/>
+
+            <ImageView
+                android:id="@+id/activity_visit_add_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/dp_general_small"
+                android:src="@drawable/edit"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_visit_comments_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_general_normal"
+            android:padding="@dimen/dp_general_small"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

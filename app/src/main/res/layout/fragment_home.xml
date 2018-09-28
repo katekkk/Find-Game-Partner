@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.HomeFragment">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/fragment_home_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:queryHint="@string/fragment_home_hint_search" />
+
+    <com.youth.banner.Banner
+        android:id="@+id/fragment_home_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_fragment_home_banner_height"
+        android:layout_margin="@dimen/dp_general_large"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:id="@+id/fragment_home_layout_hot_games"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp_general_normal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dp_general_huge">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_fragment_home_logo_size"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_fragment_home_logo_size"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_fragment_home_logo_size"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_fragment_home_logo_size"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_fragment_home_logo_size"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_fragment_home_logo_size"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

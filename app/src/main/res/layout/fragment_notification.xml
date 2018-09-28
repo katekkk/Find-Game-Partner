@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fragment_notification_entry_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/dp_general_large">
+
+        <ImageView
+            android:id="@+id/fragment_notification_img_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_comment"
+            app:layout_constraintBottom_toBottomOf="@id/fragment_notification_text_view_comments"
+            app:layout_constraintEnd_toStartOf="@id/fragment_notification_text_view_comments"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/fragment_notification_text_view_comments" />
+
+        <TextView
+            android:id="@+id/fragment_notification_text_view_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_notification_comments"
+            android:textSize="18sp"
+            android:layout_marginStart="@dimen/dp_general_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/fragment_notification_img_comments"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@drawable/shape_vertical_line"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fragment_notification_entry_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/dp_general_large">
+
+        <ImageView
+            android:id="@+id/fragment_notification_img_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_notice"
+            app:layout_constraintBottom_toBottomOf="@id/fragment_notification_text_view_notice"
+            app:layout_constraintEnd_toStartOf="@id/fragment_notification_text_view_notice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/fragment_notification_text_view_notice" />
+
+        <TextView
+            android:id="@+id/fragment_notification_text_view_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_notification_notice"
+            android:textSize="18sp"
+            android:layout_marginStart="@dimen/dp_general_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/fragment_notification_img_notice"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@drawable/shape_vertical_line"/>
+
+</LinearLayout>

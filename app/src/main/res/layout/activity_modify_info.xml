@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/activity_modify_info_btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_general_large"
+            android:src="@drawable/ic_return"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_profile_edit_info"
+            android:textSize="@dimen/sp_general_huge"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_general_large">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_general_normal"
+            android:text="Icon"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_general_huge"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/activity_modify_info_icon_riv"
+            android:layout_width="@dimen/dp_item_logo_size"
+            android:layout_height="@dimen/dp_item_logo_size"
+            android:layout_marginStart="@dimen/dp_general_large"
+            android:layout_marginBottom="@dimen/dp_general_normal"
+            android:src="@drawable/portrait_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_general_normal"
+            android:text="Label"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_general_huge"/>
+
+        <EditText
+            android:id="@+id/activity_modify_info_label_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_general_large"
+            android:layout_marginBottom="@dimen/dp_general_normal"
+            android:hint="Your label here. "/>
+
+    </LinearLayout>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/activity_modify_info_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_general_huge"
+        android:layout_marginEnd="@dimen/dp_general_huge"
+        android:layout_marginBottom="@dimen/dp_general_normal"
+        android:text="SAVE"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"/>
+</LinearLayout>

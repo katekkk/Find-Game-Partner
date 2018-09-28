@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dp_fragment_home_banner_height">200dp</dimen>
+    <dimen name="dp_fragment_home_logo_size">80dp</dimen>
+
+    <dimen name="dp_fragment_profile_portrait_size">80dp</dimen>
+    <dimen name="dp_fragment_profile_logo_size">64dp</dimen>
+
+    <dimen name="dp_item_logo_size">48dp</dimen>
+
+    <dimen name="dp_fragment_profile_login_form_width">240dp</dimen>
+
+    <dimen name="dp_general_tiny">2dp</dimen>
+    <dimen name="dp_general_small">4dp</dimen>
+    <dimen name="dp_general_normal">8dp</dimen>
+    <dimen name="dp_general_middle">12dp</dimen>
+    <dimen name="dp_general_large">16dp</dimen>
+    <dimen name="dp_general_huge">32dp</dimen>
+    <dimen name="dp_general_enormous">64dp</dimen>
+
+    <dimen name="sp_general_small">14sp</dimen>
+    <dimen name="sp_general_normal">16sp</dimen>
+    <dimen name="sp_general_large">18sp</dimen>
+    <dimen name="sp_general_huge">22sp</dimen>
+</resources>

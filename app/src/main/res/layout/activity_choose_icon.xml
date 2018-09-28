@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/activity_choose_icon_btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_general_large"
+            android:src="@drawable/ic_return"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHOOSE ICON"
+            android:textSize="@dimen/sp_general_huge"/>
+    </android.support.v7.widget.Toolbar>
+
+    <GridLayout
+        android:id="@+id/activity_choose_icon_icons_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_general_large">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="@dimen/dp_fragment_profile_portrait_size"
+            android:layout_height="@dimen/dp_fragment_profile_portrait_size"
+            android:layout_margin="@dimen/dp_general_normal"
+            android:src="@drawable/portrait_1"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="@dimen/dp_fragment_profile_portrait_size"
+            android:layout_height="@dimen/dp_fragment_profile_portrait_size"
+            android:layout_margin="@dimen/dp_general_normal"
+            android:src="@drawable/portrait_2"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="@dimen/dp_fragment_profile_portrait_size"
+            android:layout_height="@dimen/dp_fragment_profile_portrait_size"
+            android:layout_margin="@dimen/dp_general_normal"
+            android:src="@drawable/portrait_3"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="@dimen/dp_fragment_profile_portrait_size"
+            android:layout_height="@dimen/dp_fragment_profile_portrait_size"
+            android:layout_margin="@dimen/dp_general_normal"
+            android:src="@drawable/portrait_4"/>
+
+    </GridLayout>
+
+</LinearLayout>

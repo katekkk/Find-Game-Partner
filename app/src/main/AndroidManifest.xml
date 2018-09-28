@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fgp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".search.SearchResultActivity" android:screenOrientation="portrait" />
+        <activity android:name=".visit.VisitActivity" android:screenOrientation="portrait" />
+        <activity android:name=".profile.usergame.UserGameActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".players.GamePlayersActivity" android:windowSoftInputMode="stateAlwaysHidden" android:screenOrientation="portrait"/>
+        <activity android:name=".user_comment.UserCommentActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.usergame.addgame.AddUserGameActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.modify.ModifyInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.modify.IconChooseActivity" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

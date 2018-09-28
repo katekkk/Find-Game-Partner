@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">FGP</string>
+    <string name="title_home">Home</string>
+    <string name="title_classification">Classification</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="fragment_notification_comments">COMMENTS</string>
+    <string name="fragment_notification_notice">NOTICE</string>
+
+    <string name="fragment_home_hint_search">SEARCH GAME</string>
+
+    <string name="fragment_profile_introduction">INTRODUCTION:</string>
+    <string name="fragment_profile_games">GAMES:</string>
+    <string name="fragment_profile_good_at">GOOD AT:</string>
+    <string name="fragment_profile_logout">LOGOUT</string>
+    <string name="fragment_profile_edit_info">EDIT INFO</string>
+
+    <string name="fragment_profile_not_login_title">WELCOME TO FGP :)</string>
+    <string name="fragment_profile_not_login_login">LOGIN</string>
+    <string name="fragment_profile_not_login_register">REGISTER</string>
+
+    <string name="fragment_profile_login_hint_username">Username</string>
+    <string name="fragment_profile_login_hint_password">Password</string>
+
+    <string name="fragment_profile_transition_name_welcome_text">WelcomeText</string>
+    <string name="fragment_profile_transition_name_login_btn">LoginBtn</string>
+    <string name="fragment_profile_transition_name_register_btn">RegisterBtn</string>
+
+    <string name="error_network">Network Error</string>
+
+    <string name="warn_empty_username">Username cannot be empty</string>
+    <string name="warn_empty_password">Password cannot be empty</string>
+
+    <string name="dialog_please_wait">Please wait…</string>
+
+    <string name="fragment_add_user_game_choose_game_title">CHOOSE A GAME</string>
+    <string name="fragment_add_user_game_choose_game_next">NEXT</string>
+
+    <string name="fragment_add_user_game_input_duration_title">INPUT PLAY TIME</string>
+    <string name="fragment_add_user_game_input_duration_add">ADD</string>
+    <string name="fragment_add_user_game_input_duration_hint">HOW MANY DAYS HAVE YOU
+        PLAYED?</string>
+
+</resources>

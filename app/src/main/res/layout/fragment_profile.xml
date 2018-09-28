@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_general_large">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/fragment_profile_img_portrait"
+        android:layout_width="@dimen/dp_fragment_profile_portrait_size"
+        android:layout_height="@dimen/dp_fragment_profile_portrait_size"
+        android:layout_marginStart="@dimen/dp_general_huge"
+        android:layout_marginTop="@dimen/dp_general_large"
+        android:src="@drawable/portrait_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/fragment_profile_text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_general_enormous"
+        android:paddingStart="@dimen/dp_general_large"
+        android:paddingTop="@dimen/dp_general_normal"
+        android:paddingEnd="@dimen/dp_general_large"
+        android:paddingBottom="@dimen/dp_general_normal"
+        android:text="John"
+        android:textSize="@dimen/sp_general_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_img_portrait"
+        app:layout_constraintStart_toEndOf="@+id/fragment_profile_img_portrait"
+        app:layout_constraintTop_toTopOf="@+id/fragment_profile_img_portrait" />
+
+    <LinearLayout
+        android:id="@+id/fragment_profile_layout_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_general_large"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_general_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_img_portrait">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_profile_introduction"
+            android:textSize="@dimen/sp_general_normal" />
+
+        <TextView
+            android:id="@+id/fragment_profile_text_view_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_general_normal"
+            android:text="A happy game player :)"
+            android:textSize="@dimen/sp_general_small" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_profile_layout_games"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_general_large"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_general_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_layout_introduction">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/fragment_profile_games"
+            android:textSize="@dimen/sp_general_normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_right" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_profile_text_view_good_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:padding="@dimen/dp_general_normal"
+        android:text="@string/fragment_profile_good_at"
+        android:textSize="@dimen/sp_general_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_layout_games" />
+
+    <LinearLayout
+        android:id="@+id/fragment_profile_layout_good_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_text_view_good_at">
+
+        <ImageView
+            android:layout_width="@dimen/dp_fragment_profile_logo_size"
+            android:layout_height="@dimen/dp_fragment_profile_logo_size"
+            android:layout_margin="@dimen/dp_general_normal" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_fragment_profile_logo_size"
+            android:layout_height="@dimen/dp_fragment_profile_logo_size"
+            android:layout_margin="@dimen/dp_general_normal" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_fragment_profile_logo_size"
+            android:layout_height="@dimen/dp_fragment_profile_logo_size"
+            android:layout_margin="@dimen/dp_general_normal" />
+    </LinearLayout>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/fragment_profile_btn_edit_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_general_huge"
+        android:layout_marginEnd="@dimen/dp_general_huge"
+        android:layout_marginBottom="@dimen/dp_general_normal"
+        android:text="@string/fragment_profile_edit_info"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:layout_constraintBottom_toTopOf="@id/fragment_profile_btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/fragment_profile_btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_general_huge"
+        android:layout_marginEnd="@dimen/dp_general_huge"
+        android:text="@string/fragment_profile_logout"
+        app:bootstrapBrand="danger"
+        app:bootstrapSize="lg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

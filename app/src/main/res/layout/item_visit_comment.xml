@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_general_large"
+    android:layout_marginTop="@dimen/dp_general_small"
+    android:layout_marginEnd="@dimen/dp_general_large"
+    android:background="@color/colorGrayLight"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_general_middle">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/item_comment_user_icon_riv"
+        android:layout_width="@dimen/dp_general_huge"
+        android:layout_height="@dimen/dp_general_huge"
+        app:riv_oval="true"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_general_normal"
+        android:layout_marginEnd="@dimen/dp_general_normal"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_comment_username_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_general_small"
+            android:textSize="@dimen/sp_general_large"/>
+
+        <TextView
+            android:id="@+id/item_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_general_small"/>
+
+    </LinearLayout>
+
+</LinearLayout>
